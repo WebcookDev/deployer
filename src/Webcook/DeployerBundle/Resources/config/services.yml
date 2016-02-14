@@ -1,0 +1,4 @@
+services:
+#    webcook_deployer.example:
+#        class: Webcook\DeployerBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

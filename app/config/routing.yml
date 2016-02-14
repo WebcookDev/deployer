@@ -1,0 +1,8 @@
+webcook_deployer:
+    resource: "@WebcookDeployerBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+# app:
+#     resource: "@AppBundle/Controller/"
+#     type:     annotation
