@@ -43,5 +43,7 @@ Vagrant.configure(2) do |config|
 
     sudo php composer-setup.php --install-dir=/usr/bin
     sudo ln -s /usr/bin/composer.phat /usr/bin/composer
+
+    rm composer-setup.php
   SHELL
 end
