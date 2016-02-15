@@ -9,11 +9,9 @@ services:
   - mysql
 
 before_script:
-  # Update Composer
   - composer self-update
-  # Install
-  - composer install
   - mysql -e 'create database deployer;'
+  - composer install
 script:
   - vendor/phpunit/phpunit/phpunit -c ./ --coverage-clover=coverage.clover
   - wget https://scrutinizer-ci.com/ocular.phar
