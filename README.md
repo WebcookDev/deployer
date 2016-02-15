@@ -5,6 +5,7 @@ deployer
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/WebcookDev/deployer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/WebcookDev/deployer/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/WebcookDev/deployer/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/WebcookDev/deployer/?branch=master)
 
+Road map:
 - [ ] application management (REST API)
   - [ ] entities
   - [ ] controllers
