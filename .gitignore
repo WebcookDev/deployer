@@ -16,3 +16,4 @@
 /web/bundles/
 .vagrant
 composer-setup.php
+composer.phar
