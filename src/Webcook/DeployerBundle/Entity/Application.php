@@ -233,13 +233,13 @@ class Application
 
     public function setPrice($price)
     {
-        $this->price = $price * 100;
+        $this->price = $price;
 
         return $this;
     }
 
     public function getPrice()
     {
-        return $this->price / 100;
+        return $this->price;
     }
 }

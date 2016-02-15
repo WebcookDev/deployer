@@ -15,7 +15,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class MoneyEmbeddable extends \Money\Money
 {
-	/**
+    /**
      * @var int
      *
      * @ORM\Column(type="integer")
@@ -24,8 +24,8 @@ class MoneyEmbeddable extends \Money\Money
 
     /**
      * @var \Money\Currency 
-	 *
-	 * @ORM\Column(type="string")
+     *
+     * @ORM\Column(type="string")
      */
     private $currency;
 }
