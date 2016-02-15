@@ -26,6 +26,7 @@ Vagrant.configure(2) do |config|
     apt-key add dotdeb.gpg
 
     apt-get update
+    sudo apt-get install -y mysql-server
     sudo apt-get install -y apache2
     sudo apt-get install -y php7.0
     sudo apt-get install -y php7.0-mysql
@@ -45,5 +46,10 @@ Vagrant.configure(2) do |config|
     sudo ln -s /usr/bin/composer.phat /usr/bin/composer
 
     rm composer-setup.php
+
+    echo 'CREATE DATABASE IF NOT EXISTS deployer;' | mysql -u root -p
+
+    cd /var/www/deployer
+    composer install
   SHELL
 end

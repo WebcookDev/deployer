@@ -67,3 +67,8 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+tbbc_money:
+    currencies: ["CZK", "EUR"]
+    reference_currency: "CZK"
+    decimals: 2

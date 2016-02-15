@@ -7,14 +7,17 @@ deployer
 
 Road map:
 - [ ] application management (REST API)
-  - [ ] entities
+  - [x] entities
+  - [ ] forms
   - [ ] controllers
   - [ ] unit tests
   - [ ] functional tests
 - [ ] server management (REST API)
-  - [ ] entities
+  - [x] entities
+  - [ ] forms
   - [ ] controllers
   - [ ] unit tests
   - [ ] functional tests
 - [ ] implement DigitalOcean APIv2
+- [x] include money pattern
 - [ ] bash scripts for synchronization

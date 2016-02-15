@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "43c0396cf8efe40a17e925b8eac31216",
-    "content-hash": "8f39915250bc6d58fb407806d159fdc6",
+    "hash": "13fd4492c256e0cadfe42b2651af8338",
+    "content-hash": "67468695f247cc2fbd563a2b0ace4e00",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1191,6 +1191,61 @@
             "time": "2015-11-10 12:26:42"
         },
         {
+            "name": "mathiasverraes/money",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moneyphp/money.git",
+                "reference": "b9e258119041fed20e4704f72e3ebb94ed10bea2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moneyphp/money/zipball/b9e258119041fed20e4704f72e3ebb94ed10bea2",
+                "reference": "b9e258119041fed20e4704f72e3ebb94ed10bea2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "Sylius/SyliusMoneyBundle": "Sylius' Symfony2 integration with Money library",
+                "TheBigBrainsCompany/TbbcMoneyBundle": "Very complete Symfony2 bundle with support for Twig, Doctrine, Forms, ...",
+                "pink-tie/money-bundle": "Pink-Tie's Symfony2 integration with Money library"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Money": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mathias Verraes",
+                    "email": "mathias@verraes.net"
+                }
+            ],
+            "description": "PHP implementation of Fowler's Money pattern",
+            "homepage": "http://verraes.net/2011/04/fowler-money-pattern-in-php/",
+            "keywords": [
+                "Generic Sub-domain",
+                "Value Object",
+                "money"
+            ],
+            "time": "2014-10-07 12:54:10"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.17.2",
             "source": {
@@ -2184,6 +2239,78 @@
             "time": "2016-02-03 12:42:23"
         },
         {
+            "name": "tbbc/money-bundle",
+            "version": "dev-drewclauson-symfony-3.0",
+            "target-dir": "Tbbc/MoneyBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drewclauson/TbbcMoneyBundle.git",
+                "reference": "0df721959dac11c113091d01279b7a270e2b28f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drewclauson/TbbcMoneyBundle/zipball/0df721959dac11c113091d01279b7a270e2b28f2",
+                "reference": "0df721959dac11c113091d01279b7a270e2b28f2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "mathiasverraes/money": "1.2.*",
+                "php": ">=5.3.2",
+                "symfony/console": "~2.3|~3.0",
+                "symfony/dom-crawler": "~2.3|~3.0",
+                "symfony/form": "~2.3|~3.0",
+                "symfony/framework-bundle": "~2.3|~3.0",
+                "symfony/twig-bundle": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "beberlei/doctrineextensions": "0.3.*",
+                "doctrine/doctrine-bundle": "~1.1",
+                "doctrine/orm": "~2.3",
+                "ext-sqlite3": "*",
+                "phpunit/dbunit": "~1.3",
+                "phpunit/phpunit": "~3.7",
+                "symfony/browser-kit": "~2.3|~3.0",
+                "symfony/class-loader": "~2.3|~3.0",
+                "symfony/finder": "~2.3|~3.0",
+                "symfony/yaml": "~2.3|~3.0"
+            },
+            "suggest": {
+                "doctrine/doctrine-bundle": "~1.1",
+                "doctrine/orm": "~2.3"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Tbbc\\MoneyBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Philippe Le Van",
+                    "homepage": "https://twitter.com/plv"
+                },
+                {
+                    "name": "Sebastien Lefebvre"
+                }
+            ],
+            "description": "This is a Symfony2 bundle that integrates the php money library from Mathias Verraes (Fowler pattern): https://github.com/mathiasverraes/money.",
+            "homepage": "https://github.com/TheBigBrainsCompany/TbbcMoneyBundle",
+            "keywords": [
+                "conversion",
+                "currency",
+                "fowler",
+                "money"
+            ],
+            "support": {
+                "source": "https://github.com/drewclauson/TbbcMoneyBundle/tree/drewclauson-symfony-3.0"
+            },
+            "time": "2016-01-25 14:57:12"
+        },
+        {
             "name": "twig/twig",
             "version": "v1.24.0",
             "source": {
@@ -2428,22 +2555,24 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "v1.5.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "4745ded9307786b730d7a60df5cb5a6c43cf95f7"
+                "reference": "3c91bdf81797d725b14cb62906f9a4ce44235972"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/4745ded9307786b730d7a60df5cb5a6c43cf95f7",
-                "reference": "4745ded9307786b730d7a60df5cb5a6c43cf95f7",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/3c91bdf81797d725b14cb62906f9a4ce44235972",
+                "reference": "3c91bdf81797d725b14cb62906f9a4ce44235972",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.0.2",
+                "php": "^5.3|^7.0",
                 "phpdocumentor/reflection-docblock": "~2.0",
-                "sebastian/comparator": "~1.1"
+                "sebastian/comparator": "~1.1",
+                "sebastian/recursion-context": "~1.0"
             },
             "require-dev": {
                 "phpspec/phpspec": "~2.0"
@@ -2451,7 +2580,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4.x-dev"
+                    "dev-master": "1.5.x-dev"
                 }
             },
             "autoload": {
@@ -2484,7 +2613,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-08-13 10:07:40"
+            "time": "2016-02-15 07:46:21"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -3433,7 +3562,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "tbbc/money-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
